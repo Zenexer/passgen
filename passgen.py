@@ -7,7 +7,7 @@ from bcrypt import hashpw, gensalt
 
 
 class PassGen(object):
-    def __init__(self, max_length=64):
+    def __init__(self):
         self.chars = [c for c in ' QqWwEeRrTtYyUuIiOoPpAaSsDdFfGgHhJjKkLlZzXxCcVvBbNnMm1234567890`~!@#$%^&*()-_=+[{]};:\'"\|,<.>/?']
         self.random = SystemRandom()
 
