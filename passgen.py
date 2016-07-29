@@ -29,7 +29,7 @@ class PassGen(object):
 if __name__ == '__main__':
     length = 64
     if len(sys.argv) >= 2:
-        length = sys.argv[1]
+        length = int(sys.argv[1])
 
     gen = PassGen()
     password = gen.generate(length)
