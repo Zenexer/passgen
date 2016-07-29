@@ -33,7 +33,8 @@ if __name__ == '__main__':
 
     gen = PassGen()
     password = gen.generate(length)
-    pass_hash = hashpw(password.encode('utf-8'), gensalt(rounds=12))
-
     print(password)
-    print(pass_hash.decode('ascii'))
+    
+    # If you want to also output a bcrypt hash:
+    #pass_hash = hashpw(password.encode('utf-8'), gensalt(rounds=12))
+    #print(pass_hash.decode('ascii'))
