@@ -14,6 +14,12 @@ Requirements
 * Python 3.x (built for 3.5)
 * bcrypt 3.x (built for 3.1.0)
 
+On most systems, you can automatically install the correct requirements using pip:
+
+``` bash
+pip3 install -r requirements.txt
+```
+
 Usage
 =====
 
