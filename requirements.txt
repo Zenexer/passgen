@@ -1,1 +1,3 @@
+# Copyright (c) Paul Buonopane and Brandon Currell.  All rights reserved.
+# Released under BSD 2-Clause License.  See LICENSE file for details.
 bcrypt>=3.0.0

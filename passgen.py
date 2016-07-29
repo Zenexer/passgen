@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# Based on code by Brandon Currell: https://gist.github.com/BranicYeti/1264f7f60f66d6a065edb20e37259ddd
+# Copyright (c) Paul Buonopane and Brandon Currell.  All rights reserved.
+# Released under BSD 2-Clause License.  See LICENSE file for details.
 
 from sys import stderr, exit
 try:
@@ -56,6 +57,7 @@ class RealSystemRandom(SystemRandom):
         x = int.from_bytes(_random(numbytes), 'big')
         return x >> (numbytes * 8 - k)                # trim excess bits
 
+# Based on code by Brandon Currell: https://gist.github.com/BranicYeti/1264f7f60f66d6a065edb20e37259ddd
 class PassGen(object):
     def __init__(self):
         self.chars = [c for c in _passchars()]
