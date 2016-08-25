@@ -73,7 +73,7 @@ class PassGen(object):
             c = self.randchar()
             if (len(password) == 0 or len(password) == length - 1) and c == ' ':
                 continue
-            password += self.randchar()
+            password += c
 
         return password
 
